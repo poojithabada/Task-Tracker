@@ -26,6 +26,7 @@ app.use("/api/tasks", taskRoutes);
 
 // Production Build: Serve frontend
 if (process.env.NODE_ENV === 'production') {
+  // Try 'client/dist' if the server folder is at the root level
   app.use(express.static(path.join(__dirname, '../client/dist')));
   
   app.get('*', (req, res) => {
