@@ -1,6 +1,6 @@
 import React from "react";
 import API from "../services/api";
-import "../styles/taskitem.css";
+import "../styles/taskItem.css";
 import { formatDistanceToNow } from "date-fns";
 
 import toast from "react-hot-toast"; // Import toast
