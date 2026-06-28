@@ -1,0 +1,90 @@
+/*==============================
+  FIXED NAVBAR LAYOUT
+===============================*/
+.navbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 12px 40px !important;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  width: 100% !important;
+}
+
+.navbar-left {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+.navbar-brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-weight: 700;
+  color: #111827;
+}
+
+.navbar-right {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+.user-profile {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Optional: Make the avatar circle and small */
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+/*==============================
+  NAVBAR BUTTON STYLING
+===============================*/
+
+/* The "My Tasks" pill button */
+.nav-tasks-btn {
+  background-color: #eef2ff; /* Light purple/blue tint */
+  color: #4f46e5;           /* Purple text */
+  padding: 6px 16px;
+  border-radius: 20px;      /* Pill shape */
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nav-tasks-btn:hover {
+  background-color: #e0e7ff; /* Darker hover tint */
+}
+
+/* The "Log out" outline pill button */
+.logout-btn-pill {
+  background-color: transparent;
+  color: #374151;
+  padding: 6px 16px;
+  border-radius: 20px;      /* Pill shape */
+  border: 1px solid #e5e7eb; /* Subtle border */
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-btn-pill:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}

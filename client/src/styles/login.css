@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  /* Dark solid background matching the image */
+  background-color: #0f111a; 
+  color: #333;
+}
+
+/*==============================
+  LAYOUT & CONTAINER
+===============================*/
+.login-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/*==============================
+  LOGO
+===============================*/
+.app-logo {
+  color: Black;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.5px;
+}
+
+.logo-icon {
+  color: #6366f1; /* Purple accent */
+  font-size: 24px;
+}
+
+/*==============================
+  CARD
+===============================*/
+.login-card {
+  background: white;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.login-card .subtitle {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 32px;
+}
+
+/*==============================
+  FORM & INPUTS
+===============================*/
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f8fafc; /* Very light gray/blue tint */
+  font-size: 14px;
+  color: #1f2937;
+  transition: all 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #6366f1;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/*==============================
+  BUTTON
+===============================*/
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #4f46e5;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/*==============================
+  BOTTOM TEXT
+===============================*/
+.bottom-text {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.bottom-text a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+/*==============================
+  RESPONSIVE
+===============================*/
+@media (max-width: 480px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+}

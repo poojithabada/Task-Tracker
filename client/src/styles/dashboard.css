@@ -1,0 +1,284 @@
+/*==============================
+  FIXED NAVBAR LAYOUT
+===============================*/
+.navbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 12px 40px !important;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  width: 100% !important;
+}
+
+.navbar-left {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+.navbar-brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-weight: 700;
+  color: #111827;
+}
+
+.navbar-right {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+}
+
+.user-profile {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Optional: Make the avatar circle and small */
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+/*==============================
+  NAVBAR BUTTON STYLING
+===============================*/
+
+/* The "My Tasks" pill button */
+.nav-tasks-btn {
+  background-color: #eef2ff; /* Light purple/blue tint */
+  color: #4f46e5;           /* Purple text */
+  padding: 6px 16px;
+  border-radius: 20px;      /* Pill shape */
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nav-tasks-btn:hover {
+  background-color: #e0e7ff; /* Darker hover tint */
+}
+
+/* The "Log out" outline pill button */
+.logout-btn-pill {
+  background-color: transparent;
+  color: #374151;
+  padding: 6px 16px;
+  border-radius: 20px;      /* Pill shape */
+  border: 1px solid #e5e7eb; /* Subtle border */
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-btn-pill:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+/*==============================
+  PAGE LAYOUT
+===============================*/
+.dashboard-layout {
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Very light grey background */
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.dashboard-container {
+  max-width: 800px; /* Constrain width to look like the image */
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/*==============================
+  TASK FORM STYLES
+===============================*/
+.task-form-card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.section-title.left-align {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.half-width {
+  flex: 1;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1f2937;
+  background-color: #fff;
+  transition: border-color 0.2s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end; /* Right aligns the button */
+  margin-top: 10px;
+}
+
+.blue-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.blue-btn:hover {
+  background-color: #0056b3;
+}
+
+.blue-btn:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+/*==============================
+  FILTER & SORT BAR
+===============================*/
+.controls-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 30px;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.control-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.control-group select {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  background-color: white;
+}
+
+/*==============================
+  EMPTY STATE & LIST
+===============================*/
+.empty-state-dashed {
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f9fafb;
+}
+
+.task-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .controls-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
