@@ -29,9 +29,9 @@ if (process.env.NODE_ENV === 'production') {
   // Try 'client/dist' if the server folder is at the root level
   app.use(express.static(path.join(__dirname, '../client/dist')));
   
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
-  });
+  app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+});
 }
 
 // Start Server
